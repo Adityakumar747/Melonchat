@@ -1,0 +1,7 @@
+{
+  "/api/stream-token/route": "app/api/stream-token/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/forum/[topic]/page": "app/forum/[topic]/page.js",
+  "/forum/page": "app/forum/page.js",
+  "/page": "app/page.js"
+}

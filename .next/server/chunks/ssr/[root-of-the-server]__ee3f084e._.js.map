@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../app/chat/page.js"],"sourcesContent":["import React from 'react'\r\n\r\nconst UserChat = () => {\r\n  return (\r\n    <div>UserChat</div>\r\n  )\r\n}\r\n\r\nexport default UserChat"],"names":[],"mappings":"qVAAA,EAAA,CAAA,CAAA,sBAEiB,IAEb,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,UAAI"}

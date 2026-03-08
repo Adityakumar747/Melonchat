@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.js"],"sourcesContent":["import { clerkMiddleware, createRouteMatcher } from \"@clerk/nextjs/server\";\nimport { NextResponse } from \"next/server\";\n\nconst isPublicRoute = createRouteMatcher([\n  \"/\",\n  \"/forum(.*)\",\n  \"/contact(.*)\",\n  \"/about(.*)\",\n  \"/api/stream-token(.*)\",\n]);\n\nexport default clerkMiddleware((auth, req) => {\n  // Block /userchat and /api/users for unauthenticated users\n  if (!isPublicRoute(req)) {\n    // Auth is handled per-page for progressive UX (sign-in prompt vs hard redirect)\n    return NextResponse.next();\n  }\n  return NextResponse.next();\n});\n\nexport const config = {\n  matcher: [\"/((?!_next|.*\\\\..*).*)\"],\n};"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;AAAA;;;AAEA,MAAM,gBAAgB,IAAA,wMAAkB,EAAC;IACvC;IACA;IACA;IACA;IACA;CACD;uCAEc,IAAA,wMAAe,EAAC,CAAC,MAAM;IACpC,2DAA2D;IAC3D,IAAI,CAAC,cAAc,MAAM;QACvB,gFAAgF;QAChF,OAAO,gMAAY,CAAC,IAAI;IAC1B;IACA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAyB;AACrC"}}]
+}
