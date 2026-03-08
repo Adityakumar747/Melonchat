@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///S:/projects/chat%20app/chat/components/ThemeProvider.js"],"sourcesContent":["\"use client\";\n\nimport * as React from \"react\";\nimport { ThemeProvider as NextThemesProvider } from \"next-themes\";\n\nexport function ThemeProvider({ children, ...props }) {\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKO,SAAS,cAAc,EAAE,QAAQ,EAAE,GAAG,OAAO;IAClD,qBAAO,6LAAC,oKAAkB;QAAE,GAAG,KAAK;kBAAG;;;;;;AACzC;KAFgB"}}]
-}

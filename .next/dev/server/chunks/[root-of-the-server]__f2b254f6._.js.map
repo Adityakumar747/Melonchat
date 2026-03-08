@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 58, "column": 0}, "map": {"version":3,"sources":["file:///S:/projects/chat%20app/chat/proxy.js"],"sourcesContent":["import { clerkMiddleware, createRouteMatcher } from \"@clerk/nextjs/server\";\nimport { NextResponse } from \"next/server\";\n\nconst isPublicRoute = createRouteMatcher([\n  \"/\",\n  \"/forum(.*)\",\n  \"/contact(.*)\",\n  \"/about(.*)\",\n  \"/api/stream-token(.*)\",\n]);\n\nexport default clerkMiddleware((auth, req) => {\n  // Block /userchat and /api/users for unauthenticated users\n  if (!isPublicRoute(req)) {\n    // Auth is handled per-page for progressive UX (sign-in prompt vs hard redirect)\n    return NextResponse.next();\n  }\n  return NextResponse.next();\n});\n\nexport const config = {\n  matcher: [\"/((?!_next|.*\\\\..*).*)\"],\n};"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;;;AAEA,MAAM,gBAAgB,IAAA,gMAAkB,EAAC;IACvC;IACA;IACA;IACA;IACA;CACD;uCAEc,IAAA,gMAAe,EAAC,CAAC,MAAM;IACpC,2DAA2D;IAC3D,IAAI,CAAC,cAAc,MAAM;QACvB,gFAAgF;QAChF,OAAO,8IAAY,CAAC,IAAI;IAC1B;IACA,OAAO,8IAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAyB;AACrC"}}]
-}
