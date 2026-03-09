@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍉 MelonChat – Real-Time Community Chat Platform
 
-## Getting Started
+MelonChat is a **real-time community discussion platform** where users can join topic-based chat rooms and communicate instantly.  
+The application enables developers and learners to discuss various technology topics in a structured and interactive environment.
 
-First, run the development server:
+The platform uses modern full-stack technologies to deliver **secure authentication, real-time messaging, and scalable chat infrastructure**.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live Website**  
+https://your-vercel-link.vercel.app  
+
+🔗 **GitHub Repository**  
+https://github.com/Adityakumar747/Melonchat
+
+---
+
+## ✨ Features
+
+- Real-time messaging using Stream Chat API  
+- Topic-based community discussion channels  
+- Secure user authentication using Clerk  
+- Multiple users can join and chat in the same discussion room  
+- Responsive UI built with Tailwind CSS  
+- Scalable architecture using Next.js API routes  
+- Modern developer-friendly project structure  
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js  
+- React  
+- Tailwind CSS  
+
+### Backend
+- Next.js API Routes  
+
+### Authentication
+- Clerk  
+
+### Real-Time Chat
+- Stream Chat API  
+
+### Deployment
+- Vercel  
+
+---
+
+## 📂 Project Structure
+
+```
+Melonchat
+│
+├── app
+│   ├── forum
+│   ├── api
+│   └── page.js
+│
+├── components
+│   └── Navbar.js
+│
+├── lib
+│   └── stream.js
+│
+├── public
+│
+├── README.md
+├── package.json
+├── next.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Adityakumar747/Melonchat.git
+cd Melonchat
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Create Environment Variables
+
+Create a file:
+
+```
+.env.local
+```
+
+Add the following variables:
+
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_secret
+
+NEXT_PUBLIC_STREAM_API_KEY=your_stream_api_key
+STREAM_SECRET_KEY=your_stream_secret
+```
+
+---
+
+### 4️⃣ Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 How It Works
 
-To learn more about Next.js, take a look at the following resources:
+1. Users authenticate securely through **Clerk authentication**.
+2. After login, users can access **topic-based discussion forums**.
+3. Each topic corresponds to a **Stream chat channel**.
+4. Users joining the same topic enter the **same real-time chat room**.
+5. Messages are delivered instantly using **Stream's WebSocket infrastructure**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📌 Future Improvements
 
-## Deploy on Vercel
+- Typing indicators for active users  
+- Message reactions and emoji support  
+- Online user status indicators  
+- Private direct messaging  
+- Notifications for new messages  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 Author
+
+**Aditya Kumar**
+
+GitHub  
+https://github.com/Adityakumar747  
+
+LinkedIn  
+https://www.linkedin.com/in/aditya-kumar-08780b325
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
