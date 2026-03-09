@@ -10,7 +10,7 @@ The platform uses modern full-stack technologies to deliver **secure authenticat
 ## 🚀 Live Demo
 
 🔗 **Live Website**  
-https://your-vercel-link.vercel.app  
+https://melonchat-8hiimchl3-adityakumar747s-projects.vercel.app/
 
 🔗 **GitHub Repository**  
 https://github.com/Adityakumar747/Melonchat
